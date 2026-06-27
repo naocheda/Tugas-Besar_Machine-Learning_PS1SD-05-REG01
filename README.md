@@ -2,10 +2,10 @@
 
 # Prediksi Penyakit Alzheimer Menggunakan Machine Learning
 
-## Nama Anggota Kelompok (Pamplona)
-1. Ahnaf (Data Engineer / Analyst)
-2. Ara (Machine Learning Engineer)
-3. [Nama Anggota 3] (Evaluator & Documenter)
+## Nama Anggota Kelompok (Kapal Karam)
+1. Ardian Nafis Samudra 
+2. ANDI MUHAMMAD ABID JAYA 
+3. Ahnaf Ariacheda 
 
 ## Deskripsi Permasalahan
 Penyakit Alzheimer adalah gangguan neurologis progresif. Proyek ini bertujuan untuk menyelesaikan permasalahan nyata di bidang medis, yaitu melakukan klasifikasi dan deteksi dini status demensia pasien berdasarkan data rekam klinis.
