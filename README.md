@@ -74,7 +74,7 @@ Untuk mencegah kelebihan kapasitas (limit size) pada repositori GitHub, citra ra
 
 ## 7. Referensi Pustaka dan Kode
 Repositori ini dikembangkan dengan merujuk pada dokumentasi dan literatur berikut:
-* **Materi Akademik Utama:** Modul Pembelajaran Sains Data (Computer Vision / Live Code CNN).
+* **Materi Akademik Utama:** Kelas Mata Kuliah Machine Learning - PS1SD-05-REG01 (Computer Vision / Live Code CNN).
 * **Referensi Base Code (Kaggle Notebooks):** Pendekatan klasifikasi, arsitektur, dan tuning diadaptasi dari [Alzheimer MRI Code Documentation](https://www.kaggle.com/datasets/mohiburrahmanrifat/alzheimer/code) yang disertakan bersama dataset.
 * **PyTorch Documentation:** Dokumentasi resmi untuk [Torchvision Models (MobileNetV2)](https://pytorch.org/vision/stable/models.html) dan [Data Loaders](https://pytorch.org/docs/stable/data.html).
 * **Scikit-Learn Documentation:** Referensi modul [Classification Report & Metrics](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics).
