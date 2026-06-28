@@ -36,6 +36,8 @@ Sesuai dengan standar *best practice* dan rekomendasi dari uploader Kaggle, pipe
 
 ## 4. Hasil Eksperimen dan Kesimpulan
 Pengujian model menggunakan arsitektur **MobileNetV2** selama 15 epoch memberikan hasil yang sangat konvergen dan superior. Model dievaluasi menggunakan 951 citra pengujian yang tidak pernah dilihat sebelumnya (unseen data), dengan metrik akhir:
+
+
 <img width="151" height="143" alt="Screenshot 2026-06-28 225500" src="https://github.com/user-attachments/assets/b2b0f0c6-490b-4978-9733-a4dd2869baf5" />
 <img width="265" height="112" alt="Screenshot 2026-06-28 225437" src="https://github.com/user-attachments/assets/83d4bf5b-ccab-4361-8f1f-e82d2a596f49" />
 
