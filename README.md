@@ -23,7 +23,9 @@ Pendekatan eksperimen difokuskan pada perbandingan antara arsitektur Convolution
 Dataset menggunakan citra otak MRI format `.jpg` (total 6.336 citra) dengan metadata berformat CSV.
 * **Tautan Dataset Utama:** [Alzheimer MRI Dataset on Kaggle](https://www.kaggle.com/datasets/mohiburrahmanrifat/alzheimer/data)
 * **Lisensi Dataset:** 
+
 [Kaggle Data License & Terms](https://www.kaggle.com/terms) (Diperuntukkan murni untuk riset akademik dan non-komersial)
+
 [CC0 1.0 Universal (Public Domain Dedication)](https://creativecommons.org/publicdomain/zero/1.0/) - Dataset ini berstatus bebas hak cipta (*No Rights Reserved*). Seluruh citra di dalamnya telah didedikasikan untuk domain publik, sehingga sepenuhnya legal dan aman untuk diunduh, dimodifikasi, dan digunakan untuk keperluan riset akademik ini tanpa batasan hak cipta.
 
 ---
