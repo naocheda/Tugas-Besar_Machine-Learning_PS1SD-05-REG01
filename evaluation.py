@@ -5,7 +5,7 @@ from data_loader import get_dataloaders
 from models import get_mobilenet_v2
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-_, test_loader = get_dataloaders('Alzheimer_Dataset_Details.csv', '.')
+_, test_loader = get_dataloaders('Alzheimer_Dataset_Details.csv', 'Alzheimer_Split/')
 
 model = get_mobilenet_v2(num_classes=3).to(device)
 model.load_state_dict(torch.load('mobilenet_v2_model.pth'))
