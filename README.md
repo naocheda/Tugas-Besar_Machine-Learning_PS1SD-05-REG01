@@ -42,8 +42,6 @@ Pengujian model menggunakan arsitektur **MobileNetV2** selama 15 epoch memberika
 * **Recall Rata-rata (Weighted Avg):** 91.00%
 * **F1-Score Rata-rata (Weighted Avg):** 92.00%
 
-  ![image](https://github.com/user-attachments/assets/contoh-link-acak-dari-github)
-
 **Kesimpulan Klinis:**
 Model menunjukkan sensitivitas tinggi dengan **Recall sebesar 0.93** pada kelas kritis (`Very_Mild_Demented`). Dalam konteks skrining medis, meminimalkan *False Negative* pada fase awal penyakit adalah prioritas utama, dan model telah berhasil mencapainya. Penggunaan MobileNetV2 juga membuktikan ketahanan model terhadap imbalanced data (jumlah kelas yang tidak seimbang) dengan menjaga F1-Score tetap stabil di atas angka 0.90 di seluruh kelas.
 
