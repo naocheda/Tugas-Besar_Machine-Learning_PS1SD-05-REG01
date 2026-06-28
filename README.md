@@ -2,10 +2,10 @@
 
 Repositori ini berisi implementasi pipeline Machine Learning untuk mendeteksi tingkat keparahan penyakit Alzheimer (Demensia) dari citra MRI, dikembangkan sebagai pemenuhan Tugas Besar Mata Kuliah Machine Learning.
 
-## Anggota Kelompok
-1. **Ahnaf** (Role: ML Engineer) - Pengembangan arsitektur PyTorch dan script training.
-2. **Abid** (Role: Data Specialist) - Penyusunan DataLoader, augmentasi, dan preprocessing citra.
-3. **Ardian** (Role: ML Analyst & Ops) - Evaluasi metrik performa, Git ops, dan penyusunan laporan akhir.
+## Anggota Kelompok Kapal Karam
+1. **ANDI MUHAMMAD ABID JAYA (103132400014)** (Role: Data Specialist) - Penyusunan DataLoader, augmentasi, dan preprocessing citra.
+2. **Ahnaf Ariacheda (103132400037)** (Role: ML Engineer) - Pengembangan arsitektur PyTorch dan script training.
+3. **Ardian Nafis Samudra (103132400012)** (Role: ML Analyst & Ops) - Evaluasi metrik performa, Git ops, dan penyusunan laporan akhir.
 
 ---
 
@@ -22,7 +22,9 @@ Pendekatan eksperimen difokuskan pada perbandingan antara arsitektur Convolution
 ## 2. Sumber Dataset & Lisensi
 Dataset menggunakan citra otak MRI format `.jpg` (total 6.336 citra) dengan metadata berformat CSV.
 * **Tautan Dataset Utama:** [Alzheimer MRI Dataset on Kaggle](https://www.kaggle.com/datasets/mohiburrahmanrifat/alzheimer/data)
-* **Lisensi Dataset:** [Kaggle Data License & Terms](https://www.kaggle.com/terms) (Diperuntukkan murni untuk riset akademik dan non-komersial).
+* **Lisensi Dataset:** 
+[Kaggle Data License & Terms](https://www.kaggle.com/terms) (Diperuntukkan murni untuk riset akademik dan non-komersial)
+[CC0 1.0 Universal (Public Domain Dedication)](https://creativecommons.org/publicdomain/zero/1.0/) - Dataset ini berstatus bebas hak cipta (*No Rights Reserved*). Seluruh citra di dalamnya telah didedikasikan untuk domain publik, sehingga sepenuhnya legal dan aman untuk diunduh, dimodifikasi, dan digunakan untuk keperluan riset akademik ini tanpa batasan hak cipta.
 
 ---
 
