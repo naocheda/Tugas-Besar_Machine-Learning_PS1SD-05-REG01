@@ -39,17 +39,29 @@ Sesuai dengan standar *best practice* dan rekomendasi dari uploader Kaggle, pipe
 ---
 
 ## 4. Hasil Eksperimen dan Kesimpulan
-Pengujian model menggunakan arsitektur **MobileNetV2** selama 15 epoch memberikan hasil yang sangat konvergen dan superior. Model dievaluasi menggunakan 951 citra pengujian yang tidak pernah dilihat sebelumnya (unseen data), dengan metrik akhir:
+
+Sebagai tahap awal (*baseline*), kami melakukan eksperimen menggunakan arsitektur **CNN Dasar** konvensional dengan 2 lapis konvolusi sebagai acuan performa. Selain itu, kami juga menerapkan pendekatan *Transfer Learning* dengan **MobileNetV2** untuk mengoptimalkan klasifikasi pada fitur citra medis yang kompleks.
+
+### Tabel Perbandingan Performa Model
+Berikut adalah ringkasan hasil evaluasi akurasi dari kedua model yang telah diuji:
+
+| Model | Durasi Training | Epoch | Overall Accuracy |
+| :--- | :--- | :--- | :--- |
+| **CNN Dasar** | 40 Epoch | 40 | 77.71% |
+| **MobileNetV2** | 15 Epoch | 15 | 91.48% |
+
+### Detail Metrik Evaluasi (F1-Score)
+Perbandingan kemampuan model dalam mengklasifikasikan setiap kategori penyakit dapat dilihat pada grafik berikut:
 
 
-<img width="151" height="143" alt="Screenshot 2026-06-28 225500" src="https://github.com/user-attachments/assets/b2b0f0c6-490b-4978-9733-a4dd2869baf5" />
-<img width="265" height="112" alt="Screenshot 2026-06-28 225437" src="https://github.com/user-attachments/assets/83d4bf5b-ccab-4361-8f1f-e82d2a596f49" />
+<img width="1089" height="580" alt="image" src="https://github.com/user-attachments/assets/3a5c3f6b-e80d-43cc-a3e9-6c07765608ca" />
 
 
-* **Overall Accuracy:** 91.48%
-* **Precision Rata-rata (Weighted Avg):** 92.00%
-* **Recall Rata-rata (Weighted Avg):** 91.00%
-* **F1-Score Rata-rata (Weighted Avg):** 92.00%
+### Perbandingan Performa Model (Studi Komparatif)
+
+Sebagai studi komparatif, kami melakukan eksperimen menggunakan arsitektur **CNN Dasar** konvensional (2 lapis konvolusi) sebagai acuan awal. Setelah proses *training* selama 40 *epoch*, performa model tersebut mencapai akurasi **77.71%**. Hasil ini menunjukkan bahwa arsitektur CNN dasar kurang optimal untuk mengekstrak fitur medis yang rumit pada citra MRI. Oleh karena itu, kami beralih menggunakan pendekatan *Transfer Learning* dengan **MobileNetV2** yang terbukti jauh lebih efisien dan superior, sukses mencapai akurasi **91.48%** hanya dalam 15 *epoch*.
+
+> **Catatan:** Log eksekusi dan metrik perbandingan detail dari kedua model ini didokumentasikan pada file `Komparasi_CNN_&_MobileNetV2.ipynb` yang tersedia di repositori ini.
 
 **Kesimpulan Klinis:**
 Model menunjukkan sensitivitas tinggi dengan **Recall sebesar 0.93** pada kelas kritis (`Very_Mild_Demented`). Dalam konteks skrining medis, meminimalkan *False Negative* pada fase awal penyakit adalah prioritas utama, dan model telah berhasil mencapainya. Penggunaan MobileNetV2 juga membuktikan ketahanan model terhadap imbalanced data (jumlah kelas yang tidak seimbang) dengan menjaga F1-Score tetap stabil di atas angka 0.90 di seluruh kelas.
@@ -76,5 +88,6 @@ Untuk mencegah kelebihan kapasitas (limit size) pada repositori GitHub, citra ra
 Repositori ini dikembangkan dengan merujuk pada dokumentasi dan literatur berikut:
 * **Materi Akademik Utama:** Kelas Mata Kuliah Machine Learning - PS1SD-05-REG01 (Computer Vision / Live Code CNN).
 * **Referensi Base Code (Kaggle Notebooks):** Pendekatan klasifikasi, arsitektur, dan tuning diadaptasi dari [Alzheimer MRI Code Documentation](https://www.kaggle.com/datasets/mohiburrahmanrifat/alzheimer/code) yang disertakan bersama dataset.
+* **Arsitektur Model:** Perancangan model menggunakan struktur *Sequential CNN* dan *Transfer Learning* merujuk pada [PyTorch Official Documentation](https://pytorch.org/docs/stable/nn.html).
 * **PyTorch Documentation:** Dokumentasi resmi untuk [Torchvision Models (MobileNetV2)](https://pytorch.org/vision/stable/models.html) dan [Data Loaders](https://pytorch.org/docs/stable/data.html).
 * **Scikit-Learn Documentation:** Referensi modul [Classification Report & Metrics](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics).
